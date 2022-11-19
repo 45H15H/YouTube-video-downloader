@@ -42,14 +42,8 @@ def download_video(link):
     try:
         youtubeObject.download()
         # inside download you can pass the location to download
+
+        print("Download successful")
+
     except:
         print("An error has occurred!!!")
-    
-    print("Download successful")
-
-def progress_bar():
-    j = 1
-    for i in tqdm(range(100)):
-        # time.sleep(0.01 * j)
-        time.sleep(0.01)
-        j += 1    
