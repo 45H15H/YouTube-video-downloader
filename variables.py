@@ -1,5 +1,6 @@
-from pytube import YouTube
 
-LINK = input("Enter the YouTube video URL: ")
+def LINK():
+    return input("Enter the YouTube video URL: ")
 
-TITLE = YouTube(LINK).title
+def PLAYLISTLINK():
+    return input("Enter the YouTube playlist link: ")
