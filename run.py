@@ -16,9 +16,7 @@ def run():
     if option == 1:
         from variables import LINK
         LINK = LINK()
-        from functions import get_size, download_video, display_title
-        display_title(link = LINK)
-        print("Download size: {}".format(get_size(link = LINK)))
+        from functions import download_video
         download_video(link = LINK)
 
     elif option == 2:
